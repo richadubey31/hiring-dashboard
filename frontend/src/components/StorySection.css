@@ -1,0 +1,73 @@
+/* StorySection.css */
+.story-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h1 {
+    font-size: 55px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-content h5 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .read-more-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #204888;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more-button:hover {
+    background-color: #575a5e;
+  }
+  
+  .image-content {
+    flex: 1;
+  }
+  
+  .image-content img {
+    background-image:url(/public/images/bgst.jpeg);
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content {
+      margin-bottom: 20px;
+    }
+  
+    .image-content img {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+  

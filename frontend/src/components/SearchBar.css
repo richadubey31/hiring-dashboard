@@ -1,0 +1,77 @@
+.search-bar-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #f8f8f8;
+    border-radius: 60px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-item {
+    width: 30%;
+    min-width: 200px;
+    position: relative;
+  }
+  
+  .input-item label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-item input,
+  .input-item select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-sizing: border-box;
+  }
+  
+  .input-item select {
+    appearance: none;
+    background: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 8 8%22 width=%2210%22 height=%2210%22%3E%3Cpath d=%22M3 2l2 2H1L3 2z%22 fill=%22%23333%22/%3E%3C/svg%3E') no-repeat right 10px center;
+    background-size: 12px;
+  }
+  
+  .circle-button {
+    width: 40px;
+  height: 40px;
+  background-color: #204888;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  position: relative; 
+  margin-top: 10px;
+  margin-left: 30px;
+  }
+  
+  .circle-button:hover {
+    background-color: #575a5e;
+  }
+  
+  .circle-button:focus {
+    outline:none;
+  }
+  

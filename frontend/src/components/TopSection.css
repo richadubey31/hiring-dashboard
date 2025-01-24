@@ -1,0 +1,98 @@
+/* Full-page background */
+.top-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents overflow if elements go outside the viewport */
+  }
+  
+  /* Background photo */
+  .background-photo {
+    background-image: url("/public/images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust based on the desired visual */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Necessary for positioning the search bar */
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust size as needed */
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 20px;
+    margin: 0 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative; 
+    transition: color 0.3s ease;
+  }
+  .nav-links a.active {
+    color: #000; /* You can adjust this color */
+}
+
+  /* Active link styling (underline effect) */
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Position the underline below the text */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Underline color */
+  }
+  .nav-links a:hover {
+    color: rgb(105, 103, 103);
+  }
+  .nav-links .separator {
+    font-size: 1.2em;
+    color: #ccc; /* Light gray color for the separator */
+    margin: 0 10px; /* Space around the separator */
+  }
+  .admin-link {
+    font-style: italic; /* Make the text italic */
+    color: #9da0a4; /* A distinct color for "For Admin" */
+  }
+  
+  /* Centered content */
+  .centered-content {
+    text-align: left;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    z-index: 10; /* Ensures content is on top */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  }
+  
+  /* Search bar wrapper */
+  .search-bar-wrapper {
+  position: absolute;
+  top: 80%; /* Positions search bar in the middle of the background image */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering the search bar */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1; 
+}
+  
